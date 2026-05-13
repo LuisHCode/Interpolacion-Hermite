@@ -1,0 +1,75 @@
+.matriz-container {
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+}
+
+.matriz-container h2 {
+  color: #065f46;
+  margin: 0 0 1.5rem 0;
+  font-size: 1.5rem;
+  border-bottom: 3px solid #10b981;
+  padding-bottom: 0.5rem;
+}
+
+.tabla-scroll {
+  overflow-x: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.tabla-matriz {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  font-size: 0.95rem;
+}
+
+.tabla-matriz tr {
+  border-bottom: 1px solid #d1e7df;
+}
+
+.tabla-matriz tr:hover {
+  background-color: #ecfdf5;
+}
+
+.tabla-matriz tr:last-child {
+  border-bottom: none;
+}
+
+.tabla-matriz td {
+  padding: 1rem;
+  text-align: center;
+  font-family: 'Courier New', monospace;
+  color: #1f2937;
+}
+
+.tabla-matriz td.x-column {
+  background-color: rgba(16, 185, 129, 0.05);
+  font-weight: 600;
+  color: #10b981;
+  border-right: 2px solid #10b981;
+}
+
+.tabla-matriz td:nth-child(2) {
+  background-color: rgba(16, 185, 129, 0.03);
+  font-weight: 500;
+}
+
+.placeholder {
+  text-align: center;
+  color: #999;
+  padding: 2rem 0;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .matriz-container {
+    padding: 1.5rem;
+  }
+
+  .tabla-matriz td {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.85rem;
+  }
+}
